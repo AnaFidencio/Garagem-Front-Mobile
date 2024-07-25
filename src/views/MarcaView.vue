@@ -46,8 +46,8 @@ async function excluir(id) {
       v-model="marca.nacionalidade"
       placeholder="Nacionalidade"
     />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+    <button class="button2" @click="salvar">Salvar</button>
+    <button class="button" @click="limpar">Limpar</button>
   </div>
   <hr />
   <ul>
@@ -55,9 +55,61 @@ async function excluir(id) {
       <span @click="editar(marca)">
         ({{ marca.id }}) - {{ marca.nome }} - {{ marca.nacionalidade }}
       </span>
-      <button @click="excluir(marca.id)">X</button>
+      <button class="button1" @click="excluir(marca.id)">X</button>
     </li>
   </ul>
 </template>
 
-<style></style>
+<style>
+.button {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:18px;
+  border-radius:4px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:#ffffff;
+  background-color:#cc6666;
+  outline:none;
+  border:none;
+  cursor:pointer;
+  display:inline-block;
+  text-decoration: none;
+  transition: .4s;
+  }
+  .button2 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:18px;
+  border-radius:4px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:#ffffff;
+  background-color:#61aa25;
+  outline:none;
+  border:none;
+  cursor:pointer;
+  display:inline-block;
+  text-decoration: none;
+  transition: .4s;
+  }
+  .button1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:18px;
+  border-radius:4px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:#ffffff;
+  background-color:#414141;
+  outline:none;
+  border:none;
+  cursor:pointer;
+  display:inline-block;
+  text-decoration: none;
+  transition: .4s;
+  }
+</style>
