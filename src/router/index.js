@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import LayoutFull from '@/layouts/LayoutFull.vue';
+import CategoriaView from '@/views/CategoriaView.vue';
+import AcessorioView from '@/views/AcessorioView.vue';
+import MarcaView from '@/views/MarcaView.vue';
+import CorView from '@/views/CorView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,9 +25,24 @@ const router = createRouter({
           component: () => import('@/views/LoginView.vue'),
         },
         {
-          path: '/produtos/adicionar',
-          name: 'ProductAdd',
-          component: () => import('@/views/ProductAddView.vue')
+          path: '/categoria',
+          name: 'Categoria',
+          component: CategoriaView
+        },
+        {
+          path: '/acessorio',
+          name: 'Acessorio',
+          component: AcessorioView
+        },
+        {
+          path: '/marca',
+          name: 'Marca',
+          component: MarcaView
+        },
+        {
+          path: '/cor',
+          name: 'Cor',
+          component: CorView
         }
       ],
     },
