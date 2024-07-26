@@ -38,10 +38,10 @@ async function excluir(id) {
 
 <template>
   <h1>Marca</h1>
-  <hr />
+
   <div class="form">
-    <input type="text" v-model="marca.nome" placeholder="Nome" />
-    <input
+    <input class="form1" type="text" v-model="marca.nome" placeholder="Nome" />
+    <input class="form1"
       type="text"
       v-model="marca.nacionalidade"
       placeholder="Nacionalidade"
@@ -49,7 +49,7 @@ async function excluir(id) {
     <button class="button2" @click="salvar">Salvar</button>
     <button class="button" @click="limpar">Limpar</button>
   </div>
-  <hr />
+
   <ul>
     <li v-for="marca in marcas" :key="marca.id">
       <span @click="editar(marca)">
@@ -60,56 +60,91 @@ async function excluir(id) {
   </ul>
 </template>
 
-<style>
+<style scoped>
 .button {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#e5e0d8;
+background-color:#725c3a;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.button2 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#e5e0d8;
+background-color:#809651;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.button1 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#e5e0d8;
+background-color:#bd9e7e;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.form{
   font-family:Arial, Helvetica, sans-serif;
-  font-size:18px;
-  border-radius:4px;
-  padding-left:10px;
-  padding-right:10px;
-  padding-top:5px;
-  padding-bottom:5px;
-  color:#ffffff;
-  background-color:#cc6666;
-  outline:none;
-  border:none;
-  cursor:pointer;
-  display:inline-block;
-  text-decoration: none;
-  transition: .4s;
-  }
-  .button2 {
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#000000;
+background-color:#b3b792;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.form1{
   font-family:Arial, Helvetica, sans-serif;
-  font-size:18px;
-  border-radius:4px;
-  padding-left:10px;
-  padding-right:10px;
-  padding-top:5px;
-  padding-bottom:5px;
-  color:#ffffff;
-  background-color:#61aa25;
-  outline:none;
-  border:none;
-  cursor:pointer;
-  display:inline-block;
-  text-decoration: none;
-  transition: .4s;
-  }
-  .button1 {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:18px;
-  border-radius:4px;
-  padding-left:10px;
-  padding-right:10px;
-  padding-top:5px;
-  padding-bottom:5px;
-  color:#ffffff;
-  background-color:#414141;
-  outline:none;
-  border:none;
-  cursor:pointer;
-  display:inline-block;
-  text-decoration: none;
-  transition: .4s;
-  }
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#725c3a;
+/* background-color:#e5e0d8; */
+outline:none;
+border:none;
+cursor:pointer;
+/* display:inline-block; */
+/* text-decoration: none; */
+transition: .4s;
+}
+
 </style>

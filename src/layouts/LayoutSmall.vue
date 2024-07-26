@@ -22,14 +22,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: #725c3a;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  border-bottom: #eeeeee 2px solid;
-  background-color: white;
+  border-bottom: #809671 2px solid;
+  background-color: #809671;
 
   z-index: 10;
   position: fixed;
@@ -53,17 +54,17 @@ main {
 }
 
 footer {
-  border-top: #eeeeee 1px solid;
-  box-shadow: 0 0 10px 0 #eeeeee;
+  border-top: #e5e0d8 1px solid;
+  box-shadow: 0 0 10px 0 #e5e0d8;
   padding: 1.5rem;
   margin-top: auto;
-  background-color: white;
+  background-color: #e5e0d8;
 
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   z-index: 10;
 }

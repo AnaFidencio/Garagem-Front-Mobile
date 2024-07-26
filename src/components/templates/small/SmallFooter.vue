@@ -64,7 +64,7 @@ onBeforeRouteUpdate(() => {
     width: 100%;
     justify-content: space-between;
     text-decoration: none;
-    color: #282828;
+    color: #725c3a;
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -83,7 +83,7 @@ onBeforeRouteUpdate(() => {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #282828;
+    color: #725c3a;
     font-size: 1rem;
     transition: color 0.3s;
 }

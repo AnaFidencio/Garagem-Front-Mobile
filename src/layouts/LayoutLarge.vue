@@ -30,6 +30,7 @@
     'aside main'
     'aside footer';
   min-height: 100vh;
+  color: #725c3a;
 }
 
 header {
@@ -41,14 +42,16 @@ header {
 }
 
 aside {
-  border-right: #eeeeee 1px solid;
-  box-shadow: 0 0 10px 0 #eeeeee;
+  border-right: #809671 1px solid;
+  box-shadow: 0 0 10px 0 #809671;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   grid-area: aside;
+  background-color: #809671;
+  color: aliceblue;
 }
 
 main {
@@ -62,7 +65,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  background-color: #eeeeee;
+  background-color: #e5e0d8;
   grid-area: footer;
 }
 </style>

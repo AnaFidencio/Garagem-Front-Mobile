@@ -38,13 +38,11 @@ async function excluir(id) {
 
 <template >
   <h1>Categoria</h1>
-  <hr />
   <div class="form">
-    <input type="text" v-model="categoria.descricao" placeholder="Descrição" />
+    <input class="form1" type="text" v-model="categoria.descricao" placeholder="Descrição" />
     <button class="button2" @click="salvar">Salvar</button>
     <button class="button" @click="limpar">Limpar</button>
   </div>
-  <hr />
   <ul>
     <li v-for="categoria in categorias" :key="categoria.id">
       <span @click="editar(categoria)">
@@ -53,9 +51,10 @@ async function excluir(id) {
       <button class="button1" @click="excluir(categoria.id)">X</button>
     </li>
   </ul>
+
 </template>
 
-<style>
+<style scoped>
 .button {
 font-family:Arial, Helvetica, sans-serif;
 font-size:18px;
@@ -64,8 +63,8 @@ padding-left:10px;
 padding-right:10px;
 padding-top:5px;
 padding-bottom:5px;
-color:#ffffff;
-background-color:#cc6666;
+color:#e5e0d8;
+background-color:#725c3a;
 outline:none;
 border:none;
 cursor:pointer;
@@ -81,8 +80,8 @@ padding-left:10px;
 padding-right:10px;
 padding-top:5px;
 padding-bottom:5px;
-color:#ffffff;
-background-color:#61aa25;
+color:#e5e0d8;
+background-color:#809651;
 outline:none;
 border:none;
 cursor:pointer;
@@ -98,8 +97,8 @@ padding-left:10px;
 padding-right:10px;
 padding-top:5px;
 padding-bottom:5px;
-color:#ffffff;
-background-color:#414141;
+color:#e5e0d8;
+background-color:#bd9e7e;
 outline:none;
 border:none;
 cursor:pointer;
@@ -107,4 +106,39 @@ display:inline-block;
 text-decoration: none;
 transition: .4s;
 }
+.form{
+  font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#000000;
+background-color:#b3b792;
+outline:none;
+border:none;
+cursor:pointer;
+display:inline-block;
+text-decoration: none;
+transition: .4s;
+}
+.form1{
+  font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+border-radius:4px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+color:#725c3a;
+/* background-color:#e5e0d8; */
+outline:none;
+border:none;
+cursor:pointer;
+/* display:inline-block; */
+/* text-decoration: none; */
+transition: .4s;
+}
+
 </style>
